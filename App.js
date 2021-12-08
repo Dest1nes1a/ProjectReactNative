@@ -1,55 +1,22 @@
-import React, {useState} from 'react';
-import {View,Text, Button,StyleSheet, SafeAreaView, TextInput} from 'react-native';
-////////////////////////////////////////////////////////////////////////////////
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    marginTop: 60
-  },
-  textInputStyle: {
-    textAlign: 'center',
-    height: 50,
-    width: '70%',
-    marginBottom: 10,
-    borderColor: 'black'
-  }
-  
-});
+import React from 'react';
+import TextInputReview from './components/TextInputReview';
+import ImageWithTextInput from './components/ImageWithTextInput';
+import ButtonExample from './components/ButtonExample';
+import TextInputPractice1 from './components/TextInputPractice1';
+import TouchableExample from './components/TouchableExample';
+import TouchablePractice from './components/TouchablePractice';
 ////////////////////////////////////////////////////////////////////////////////
 
 const App = () => {
-//useState
-const [inputValue, setInputValue] = useState('');
-
-  const CheckValueIsNumberOrNot = () => {
-    if(isNaN(inputValue)){
-      alert("It is not a Number")
-    }else{
-      alert("It is a Number")
-    }
-  }
-
   return (
-    <SafeAreaView style={{flex:1}}>
-      <View style = {styles.container}>
-        <TextInput
-        placeholder = "Enter Text"
-        style = {styles.textInputStyle}
-        onChangeText = {(inputValue)=>{setInputValue(inputValue)}}
-      />
-      <Button
-       title = "Check Value is Number or Not"
-       color = 'green'
-       onPress = {CheckValueIsNumberOrNot}
-      />
-      </View>
-
-    </SafeAreaView>
-
+    //<TextInputReview/> //Call Componets TextInputReviews
+   //<ImageWithTextInput />
+   //ButtonExample/>
+   //<TextInputPractice1/>
+   //<TouchableExample/>
+   <TouchablePractice/>
   );
 };
 
 ////////////////////////////////////////////////////////////////////////////////
 export default App;
-
