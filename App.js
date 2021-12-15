@@ -1,22 +1,12 @@
-import React from 'react';
-import TextInputReview from './components/TextInputReview';
-import ImageWithTextInput from './components/ImageWithTextInput';
-import ButtonExample from './components/ButtonExample';
-import TextInputPractice1 from './components/TextInputPractice1';
-import TouchableExample from './components/TouchableExample';
-import TouchablePractice from './components/TouchablePractice';
-////////////////////////////////////////////////////////////////////////////////
+import React from 'react'
+import { View, Text } from 'react-native'
+import ModalExample from './Components/ModalExample';
 
 const App = () => {
   return (
-    //<TextInputReview/> //Call Componets TextInputReviews
-   //<ImageWithTextInput />
-   //ButtonExample/>
-   //<TextInputPractice1/>
-   //<TouchableExample/>
-   <TouchablePractice/>
+    <ModalExample/>
   );
 };
 
-////////////////////////////////////////////////////////////////////////////////
 export default App;
+
